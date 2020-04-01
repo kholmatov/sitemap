@@ -12,3 +12,7 @@ python setup.py install
 ```
 python app.py http://your.site
 ```
+Результат будет доступно на текущий директории 
+```
+graph.png
+```
