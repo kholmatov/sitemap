@@ -20,3 +20,10 @@ python app.py
 ```
 graph.png
 ```
+Дополнительная информация:
+```
+# https://docs.python.org/3/howto/logging.html
+на sitemap/__init__.py можно настроить логирование
+logging.basicConfig(level=logging.DEBUG)
+
+```
