@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
-import sys
 from sitemap import runner
 from sitemap.bor import Bor
 from sitemap.render import Render
 
-
 if __name__ == '__main__':
-    # main_url = sys.argv[1]
+
+    # измените на свой url
     main_url = 'http://i-taj.com'
     node = Bor().util_url(runner(main_url))
     if node:
