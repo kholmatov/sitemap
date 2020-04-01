@@ -32,6 +32,8 @@ python app.py
 ```
 graph.png
 ```
+![Image of Result](https://github.com/kholmatov/rendermap/blob/master/graph.png)
+
 Дополнительная информация:
 ```
 # https://docs.python.org/3/howto/logging.html
