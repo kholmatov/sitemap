@@ -8,9 +8,13 @@
 ```
 python setup.py install
 ```
+Настройка
+```
+На файле app.py изменить main_url на свой сайт 
+```
 Запуск приложения
 ```
-python app.py http://your.site
+python app.py
 ```
 Результат будет доступно на текущий директории 
 ```
