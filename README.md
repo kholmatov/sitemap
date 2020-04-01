@@ -4,6 +4,18 @@
 ```
 Для работы приложения необходима версия языка Python 3.7 и выше 
 ```
+requirements.txt
+```
+aiohttp==3.6.2
+async-timeout==3.0.1
+attrs==19.3.0
+chardet==3.0.4
+idna==2.9
+multidict==4.7.5
+pydot==1.4.1
+pyparsing==2.4.6
+yarl==1.4.2
+```
 Установка python package
 ```
 python setup.py install
