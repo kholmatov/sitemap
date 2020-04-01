@@ -6,6 +6,7 @@ class Bor:
     эффективного хранения
     и обработки строк
     """
+
     def __init__(self):
         """
         Bor конструктор
@@ -29,4 +30,19 @@ class Bor:
         """
         :return:Bor
         """
+        return self.node
+
+    def util_url(self, done):
+        """
+        Функция которое создаёт
+        структуру дерево
+        :param done:
+        :type done: dict
+        :return: dict
+        """
+        for key, value in done.items():
+            self.add([i for i in key
+                     .replace("https://", "")
+                     .replace("http://", "")
+                     .split("/") if i])
         return self.node
