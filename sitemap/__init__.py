@@ -8,7 +8,6 @@ from sitemap.spider import Spider
 def runner(main_url, max_tasks=100):
     """
     Функция для запуска процесса создание карти сайта
-    :param level:
     :param main_url: основной url сайта
     :type main_url: str
     :param max_tasks: максимальное количество заданий.
@@ -19,9 +18,9 @@ def runner(main_url, max_tasks=100):
     loop = asyncio.get_event_loop()
     c = Spider(main_url, max_tasks=max_tasks)
     loop.run_until_complete(c.start())
-
     try:
         loop.add_signal_handler(signal.SIGINT, loop.stop)
     except RuntimeError:
         pass
     logging.info('done: %d; ok: %d', len(c.done), sum(c.done.values()))
+    return c.done

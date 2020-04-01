@@ -40,8 +40,6 @@ class Spider:
 
         await future
         await self.session.close()
-        for key, value in self.done.items():
-            logging.info("%s -> %s", key, value)
 
         # print([key for key, value in self.done.items() if value])
 
